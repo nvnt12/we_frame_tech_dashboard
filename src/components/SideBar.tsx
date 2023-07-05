@@ -29,7 +29,13 @@ export default function SideBar() {
 			<div className="flex flex-col justify-center items-center py-9">
 				<div className="p-2 border-2 border-gray-200 rounded-full">
 					<div className="w-[110px] h-[110px] bg-[#FFCB33] rounded-full overflow-clip">
-						<Image src="/Avatar1.png" alt="Avatar 1 Image" width={110} height={110} />
+						<Image
+							src="/Avatar1.png"
+							alt="Avatar 1 Image"
+							width={110}
+							height={110}
+							loading="eager"
+						/>
 					</div>
 				</div>
 				<span className="text-[#6B7A99] text-base font-bold mt-6">Hello Alfred Bryant</span>
@@ -79,7 +85,7 @@ export default function SideBar() {
 					</div>
 				</div>
 			</div>
-			<div className="w-60 h-16 rounded-full border border-gray-200 mt-32 flex justify-between items-center px-8">
+			<div className="w-60 h-16 rounded-full border border-gray-200 mt-32 flex justify-between items-center py-4 px-8">
 				<IoMdCall className="w-[24px] h-[24px] hover:scale-110 text-[#FF6633]" />
 				<MdEmail className="w-[24px] h-[24px] hover:scale-110 text-[#29CC39]" />
 				<MdChromeReaderMode className="w-[22px] h-[22px] hover:scale-110 text-[#8833FF]" />

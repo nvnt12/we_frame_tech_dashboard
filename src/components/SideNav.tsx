@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function SideNav() {
 	return (
-		<div className="w-[90px] border-r border-gray-200 flex flex-col justify-between items-center gap-6 py-8 px-5">
+		<div className="w-[90px] h-[calc(100vh-80px)] border-r border-gray-200 flex flex-col justify-between items-center gap-6 py-8 px-5">
 			<div className="flex flex-col items-center gap-3">
 				<button
 					type="button"
@@ -60,6 +60,7 @@ export default function SideNav() {
 						alt="Avatar 4 Image"
 						width={50}
 						height={50}
+						loading="eager"
 						className="rounded-full"
 					/>
 				</button>
@@ -67,19 +68,37 @@ export default function SideNav() {
 					type="button"
 					className="w-[50px] h-[50px] bg-[#E62E7B]/40 rounded-full overflow-clip"
 				>
-					<Image src="/Avatar3.png" alt="Avatar 3 Image" width={50} height={50} />
+					<Image
+						src="/Avatar3.png"
+						alt="Avatar 3 Image"
+						width={50}
+						height={50}
+						loading="eager"
+					/>
 				</button>
 				<button
 					type="button"
 					className="w-[50px] h-[50px] bg-[#8833FF]/30 rounded-full overflow-clip"
 				>
-					<Image src="/Avatar2.png" alt="Avatar 2 Image" width={50} height={50} />
+					<Image
+						src="/Avatar2.png"
+						alt="Avatar 2 Image"
+						width={50}
+						height={50}
+						loading="eager"
+					/>
 				</button>
 				<button
 					type="button"
 					className="w-[50px] h-[50px] bg-[#FFCB33] rounded-full overflow-clip"
 				>
-					<Image src="/Avatar1.png" alt="Avatar 1 Image" width={50} height={50} />
+					<Image
+						src="/Avatar1.png"
+						alt="Avatar 1 Image"
+						width={50}
+						height={50}
+						loading="eager"
+					/>
 				</button>
 				<button
 					type="button"
